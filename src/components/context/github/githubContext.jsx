@@ -54,7 +54,7 @@ export const GithubProvider =({children})=>{
         dispatch({type:"SET_LOADING"})
         const info = await fetch(`https://api.github.com/search/users?q=${user}`,{
           headers: {
-            Authorization: "token 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"
+            Authorization: "token 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"
           }
         })
     
@@ -72,7 +72,7 @@ export const GithubProvider =({children})=>{
         dispatch({type:"SET_LOADING"})
         const info = await fetch(`https://api.github.com/users/${user}`,{
           headers: {
-            Authorization: "token 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"
+            Authorization: "token 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"
           }
         })
     
@@ -89,7 +89,7 @@ export const GithubProvider =({children})=>{
       const getSingleUserRepos = async (user)=>{
         const info = await fetch(`https://api.github.com/users/${user}/repos`,{
           headers: {
-            Authorization: "token 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"
+            Authorization: "token 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"
           }
         })
 

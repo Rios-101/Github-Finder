@@ -16,6 +16,7 @@ const User = () => {
     // eslint-disable-next-line
   }, []);
 
+  console.log(user);
 
 
   if (!isLoading) {

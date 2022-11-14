@@ -17,6 +17,7 @@ const UserSearch = ()=>{
         setText(e.target.value);
     }
 
+
     const submitHandler = (e)=>{
         e.preventDefault();
         if(text === ""){
