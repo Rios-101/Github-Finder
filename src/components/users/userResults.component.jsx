@@ -9,7 +9,8 @@ import UserItem from "./userItem.component"
 const UserResults = ()=>{
 
   const {userResults,isLoading} = useContext(GithubContext)
-  const [currentPage, setCurrentPage] = useState(1);
+    // pagination starting code
+  const [currentPage, setCurrentPage] = useState(0);
   const [postsPerPage] = useState(10 );
 
 
@@ -35,7 +36,7 @@ const UserResults = ()=>{
                     nextLabel={">"}
                     pageCount={pageCount}
                     onPageChange={changePage}
-                    containerClassName={"flex gap-12 justify-center"}
+                    containerClassName={"flex mb-5 gap-12 justify-center"}
                     previousLinkClassName={"previousBttn"}
                     nextLinkClassName={"nextBttn"}
                     disabledClassName={"paginationDisabled"}

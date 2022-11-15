@@ -33,7 +33,7 @@ const UserSearch = ()=>{
     }
 
     return(
-        <div className='grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 items-center mb-8 gap-8'>
+        <div className='grid grid-cols-1 mt-5 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 items-center mb-8 gap-8'>
         <form onSubmit={submitHandler}>
             <div className="relative w-full">
                 <input type="search" value={text} onChange={textChangeHandler} className="block p-2.5 w-full  text-sm text-gray-900 bg-gray-50 rounded-[10px]  border border-gray-800 " placeholder="Search "/>
